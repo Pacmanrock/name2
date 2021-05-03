@@ -1,0 +1,192 @@
+-- Objects
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Spectate = Instance.new("TextButton")
+local Tp = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Click = Instance.new("TextButton")
+local Blooned = Instance.new("TextButton")
+local Jump = Instance.new("TextButton")
+local Fling = Instance.new("TextButton")
+local AntiAFK = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+-- Properties
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+main.BorderColor3 = Color3.new(0.0588235, 0.0901961, 0.117647)
+main.Position = UDim2.new(0.146562934, 0, 0.385404825, 0)
+main.Size = UDim2.new(0, 416, 0, 521)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.Position = UDim2.new(-0.00240384624, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 416, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Blooned GUI(Made By Flaming#3913)"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 14
+
+Spectate.Name = "Spectate"
+Spectate.Parent = main
+Spectate.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+Spectate.Position = UDim2.new(0, 0, 0.189743593, 0)
+Spectate.Size = UDim2.new(0, 179, 0, 50)
+Spectate.Font = Enum.Font.SourceSans
+Spectate.Text = "Spectate To Player"
+Spectate.TextColor3 = Color3.new(0, 0, 0)
+Spectate.TextSize = 14
+Spectate.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/0pqtM7fg"))()
+end)
+
+Tp.Name = "Tp"
+Tp.Parent = main
+Tp.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+Tp.Position = UDim2.new(0.569711566, 0, 0.189743593, 0)
+Tp.Size = UDim2.new(0, 179, 0, 50)
+Tp.Font = Enum.Font.SourceSans
+Tp.Text = "Tp To Player(Press E To Teleport)"
+Tp.TextColor3 = Color3.new(0, 0, 0)
+Tp.TextSize = 14
+Tp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/AAkQjFhy"))()
+end)
+
+Speed.Name = "Speed"
+Speed.Parent = main
+Speed.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+Speed.Position = UDim2.new(0, 0, 0.358925134, 0)
+Speed.Size = UDim2.new(0, 179, 0, 50)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed Change"
+Speed.TextColor3 = Color3.new(0, 0, 0)
+Speed.TextSize = 14
+Speed.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/VBhja7r0"))()
+end)
+
+Noclip.Name = "Noclip"
+Noclip.Parent = main
+Noclip.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+Noclip.Position = UDim2.new(0.569711566, 0, 0.358925134, 0)
+Noclip.Size = UDim2.new(0, 179, 0, 50)
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "Noclip(Q)"
+Noclip.TextColor3 = Color3.new(0, 0, 0)
+Noclip.TextSize = 14
+Noclip.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/aZCMnWa0"))()
+end)
+
+Click.Name = "Click"
+Click.Parent = main
+Click.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+Click.Position = UDim2.new(0, 0, 0.516314805, 0)
+Click.Size = UDim2.new(0, 179, 0, 50)
+Click.Font = Enum.Font.SourceSans
+Click.Text = "Click Tp(CTRL+Click)"
+Click.TextColor3 = Color3.new(0, 0, 0)
+Click.TextSize = 14
+Click.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/E1KStgFY"))()
+end)
+
+Blooned.Name = "Blooned"
+Blooned.Parent = main
+Blooned.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+Blooned.Position = UDim2.new(0.569711566, 0, 0.516314805, 0)
+Blooned.Size = UDim2.new(0, 179, 0, 50)
+Blooned.Font = Enum.Font.SourceSans
+Blooned.Text = "Blooned Admin"
+Blooned.TextColor3 = Color3.new(0, 0, 0)
+Blooned.TextSize = 14
+Blooned.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Pacmanrock/name/main/Blooned"))()
+end)
+
+Jump.Name = "Jump"
+Jump.Parent = main
+Jump.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+Jump.Position = UDim2.new(0.569711566, 0, 0.677543163, 0)
+Jump.Size = UDim2.new(0, 179, 0, 50)
+Jump.Font = Enum.Font.SourceSans
+Jump.Text = "Infinite Jump"
+Jump.TextColor3 = Color3.new(0, 0, 0)
+Jump.TextSize = 14
+Jump.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/eb85iwBG"))()
+end)
+
+Fling.Name = "Fling"
+Fling.Parent = main
+Fling.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+Fling.Position = UDim2.new(0.283653885, 0, 0.80586642, 0)
+Fling.Size = UDim2.new(0, 179, 0, 50)
+Fling.Font = Enum.Font.SourceSans
+Fling.Text = "FE Fling Script"
+Fling.TextColor3 = Color3.new(0, 0, 0)
+Fling.TextSize = 14
+Fling.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/nsF8VEig"))()
+end)
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = main
+AntiAFK.BackgroundColor3 = Color3.new(0.666667, 1, 1)
+AntiAFK.Position = UDim2.new(0, 0, 0.677543163, 0)
+AntiAFK.Size = UDim2.new(0, 179, 0, 50)
+AntiAFK.Font = Enum.Font.SourceSans
+AntiAFK.Text = "Anti AFK"
+AntiAFK.TextColor3 = Color3.new(0, 0, 0)
+AntiAFK.TextSize = 14
+AntiAFK.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
+end)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.new(0.666667, 0, 0)
+close.Position = UDim2.new(0.862980783, 0, 0, 0)
+close.Size = UDim2.new(0, 57, 0, 50)
+close.Font = Enum.Font.GothamBlack
+close.Text = "X"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextSize = 16
+close.MouseButton1Down:connect(function()
+	main.Visible = false
+	openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+openmain.Position = UDim2.new(0, 0, 0.343215495, 0)
+openmain.Size = UDim2.new(0, 116, 0, 37)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 1, 1)
+open.Size = UDim2.new(0, 116, 0, 37)
+open.Font = Enum.Font.SourceSans
+open.Text = "OPEN"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 14
+open.MouseButton1Down:connect(function()
+	openmain.Visible = false
+	main.Visible = true
+end)
