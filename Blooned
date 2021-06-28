@@ -4,18 +4,30 @@ local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local Spectate = Instance.new("TextButton")
-local TpToPeople = Instance.new("TextButton")
+local Shadow = Instance.new("Frame")
 local Noclip = Instance.new("TextButton")
-local Jump = Instance.new("TextButton")
+local Shadow_2 = Instance.new("Frame")
 local Blooned = Instance.new("TextButton")
-local speed = Instance.new("TextButton")
+local Shadow_3 = Instance.new("Frame")
 local Click = Instance.new("TextButton")
-local Anti = Instance.new("TextButton")
-local FeFling = Instance.new("TextButton")
-local Btools = Instance.new("TextButton")
-local ESP = Instance.new("TextButton")
-local FullBright = Instance.new("TextButton")
+local Shadow_4 = Instance.new("Frame")
 local close = Instance.new("TextButton")
+local Fling = Instance.new("TextButton")
+local Shadow_5 = Instance.new("Frame")
+local Btools = Instance.new("TextButton")
+local Shadow_6 = Instance.new("Frame")
+local ESP = Instance.new("TextButton")
+local Shadow_7 = Instance.new("Frame")
+local FullBright = Instance.new("TextButton")
+local Shadow_8 = Instance.new("Frame")
+local Tp = Instance.new("TextButton")
+local Shadow_9 = Instance.new("Frame")
+local Jump = Instance.new("TextButton")
+local Shadow_10 = Instance.new("Frame")
+local Speed = Instance.new("TextButton")
+local Shadow_11 = Instance.new("Frame")
+local Anti = Instance.new("TextButton")
+local Shadow_12 = Instance.new("Frame")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
 
@@ -30,7 +42,7 @@ main.Position = UDim2.new(0.112191945, 0, 0.529076457, 0)
 main.Size = UDim2.new(0, 425, 0, 344)
 main.Visible = false
 main.Active = true
-main.Draggable = true 
+main.Draggable = true
 
 TextLabel.Parent = main
 TextLabel.BackgroundColor3 = Color3.new(0.666667, 1, 1)
@@ -41,174 +53,282 @@ TextLabel.TextColor3 = Color3.new(0, 0, 0)
 TextLabel.TextSize = 14
 
 Spectate.Name = "Spectate"
-Spectate.Parent = main
-Spectate.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-Spectate.Position = UDim2.new(0, 0, 0.22364217, 0)
-Spectate.Size = UDim2.new(0, 140, 0, 50)
-Spectate.Font = Enum.Font.SourceSans
+Spectate.Parent = TextLabel
+Spectate.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Spectate.BorderSizePixel = 0
+Spectate.Position = UDim2.new(0.027058823, 0, 1.18000007, 0)
+Spectate.Size = UDim2.new(0, 128, 0, 45)
+Spectate.ZIndex = 2
+Spectate.Font = Enum.Font.GothamSemibold
 Spectate.Text = "Spectate"
-Spectate.TextColor3 = Color3.new(0, 0, 0)
+Spectate.TextColor3 = Color3.new(1, 1, 1)
 Spectate.TextSize = 14
+Spectate.TextWrapped = true
 Spectate.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/0pqtM7fg"))()
 end)
 
-TpToPeople.Name = "TpToPeople"
-TpToPeople.Parent = main
-TpToPeople.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-TpToPeople.Position = UDim2.new(0.670588255, 0, 0.22364217, 0)
-TpToPeople.Size = UDim2.new(0, 140, 0, 50)
-TpToPeople.Font = Enum.Font.SourceSans
-TpToPeople.Text = "Tp To Player(E To Teleport)"
-TpToPeople.TextColor3 = Color3.new(0, 0, 0)
-TpToPeople.TextSize = 14
-TpToPeople.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/AAkQjFhy"))()
-end)
+Shadow.Name = "Shadow"
+Shadow.Parent = Spectate
+Shadow.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
 
 Noclip.Name = "Noclip"
-Noclip.Parent = main
-Noclip.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-Noclip.Position = UDim2.new(0, 0, 0.453674108, 0)
-Noclip.Size = UDim2.new(0, 140, 0, 50)
-Noclip.Font = Enum.Font.SourceSans
+Noclip.Parent = Spectate
+Noclip.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0, 0, 1.52222216, 0)
+Noclip.Size = UDim2.new(0, 128, 0, 45)
+Noclip.ZIndex = 2
+Noclip.Font = Enum.Font.GothamSemibold
 Noclip.Text = "Noclip(Q)"
-Noclip.TextColor3 = Color3.new(0, 0, 0)
+Noclip.TextColor3 = Color3.new(1, 1, 1)
 Noclip.TextSize = 14
+Noclip.TextWrapped = true
 Noclip.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/aZCMnWa0"))()
 end)
 
-Jump.Name = "Jump"
-Jump.Parent = main
-Jump.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-Jump.Position = UDim2.new(0.670588255, 0, 0.453674108, 0)
-Jump.Size = UDim2.new(0, 140, 0, 50)
-Jump.Font = Enum.Font.SourceSans
-Jump.Text = "Infinite Jump"
-Jump.TextColor3 = Color3.new(0, 0, 0)
-Jump.TextSize = 14
-Jump.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/eb85iwBG"))()
-end)
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = Noclip
+Shadow_2.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
 
 Blooned.Name = "Blooned"
-Blooned.Parent = main
-Blooned.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-Blooned.Position = UDim2.new(0, 0, 0.655713141, 0)
-Blooned.Size = UDim2.new(0, 140, 0, 50)
-Blooned.Font = Enum.Font.SourceSans
+Blooned.Parent = Noclip
+Blooned.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Blooned.BorderSizePixel = 0
+Blooned.Position = UDim2.new(0, 0, 1.58888888, 0)
+Blooned.Size = UDim2.new(0, 128, 0, 45)
+Blooned.ZIndex = 2
+Blooned.Font = Enum.Font.GothamSemibold
 Blooned.Text = "Admin Commands"
-Blooned.TextColor3 = Color3.new(0, 0, 0)
+Blooned.TextColor3 = Color3.new(1, 1, 1)
 Blooned.TextSize = 14
+Blooned.TextWrapped = true
 Blooned.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Pacmanrock/name/main/Blooned"))()
 end)
 
-speed.Name = "speed"
-speed.Parent = main
-speed.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-speed.Position = UDim2.new(0.672941208, 0, 0.658400536, 0)
-speed.Size = UDim2.new(0, 139, 0, 50)
-speed.Font = Enum.Font.SourceSans
-speed.Text = "Speed Change"
-speed.TextColor3 = Color3.new(0, 0, 0)
-speed.TextSize = 14
-speed.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/VBhja7r0"))()
-end)
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = Blooned
+Shadow_3.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Size = UDim2.new(1, 0, 1, 4)
 
 Click.Name = "Click"
-Click.Parent = main
-Click.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-Click.Position = UDim2.new(0, 0, 0.849999905, 0)
-Click.Size = UDim2.new(0, 140, 0, 50)
-Click.Font = Enum.Font.SourceSans
-Click.Text = "Click TP(CTRL)"
-Click.TextColor3 = Color3.new(0, 0, 0)
+Click.Parent = Blooned
+Click.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Click.BorderSizePixel = 0
+Click.Position = UDim2.new(0, 0, 1.65555549, 0)
+Click.Size = UDim2.new(0, 128, 0, 45)
+Click.ZIndex = 2
+Click.Font = Enum.Font.GothamSemibold
+Click.Text = "Click TP(Ctrl+Click)"
+Click.TextColor3 = Color3.new(1, 1, 1)
 Click.TextSize = 14
+Click.TextWrapped = true
 Click.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/E1KStgFY"))()
 end)
 
-Anti.Name = "Anti"
-Anti.Parent = main
-Anti.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-Anti.Position = UDim2.new(0.670588255, 0, 0.849999905, 0)
-Anti.Size = UDim2.new(0, 139, 0, 50)
-Anti.Font = Enum.Font.SourceSans
-Anti.Text = "Anti AFK"
-Anti.TextColor3 = Color3.new(0, 0, 0)
-Anti.TextSize = 14
-Anti.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
-end)
-
-FeFling.Name = "Fe Fling"
-FeFling.Parent = main
-FeFling.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-FeFling.Position = UDim2.new(0.385882348, 0, 0.223529413, 0)
-FeFling.Size = UDim2.new(0, 94, 0, 50)
-FeFling.Font = Enum.Font.SourceSans
-FeFling.Text = "FE Fling"
-FeFling.TextColor3 = Color3.new(0, 0, 0)
-FeFling.TextSize = 14
-FeFling.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/nsF8VEig"))()
-end)
-
-Btools.Name = "Btools"
-Btools.Parent = main
-Btools.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-Btools.Position = UDim2.new(0.385882348, 0, 0.452941179, 0)
-Btools.Size = UDim2.new(0, 94, 0, 50)
-Btools.Font = Enum.Font.SourceSans
-Btools.Text = "Btools"
-Btools.TextColor3 = Color3.new(0, 0, 0)
-Btools.TextSize = 14
-Btools.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/UyKNZUVx"))()
-end)
-
-ESP.Name = "ESP"
-ESP.Parent = main
-ESP.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-ESP.Position = UDim2.new(0.385882348, 0, 0.655882239, 0)
-ESP.Size = UDim2.new(0, 94, 0, 50)
-ESP.Font = Enum.Font.SourceSans
-ESP.Text = "ESP"
-ESP.TextColor3 = Color3.new(0, 0, 0)
-ESP.TextSize = 14
-ESP.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/NAHHheWa"))()
-end)
-
-FullBright.Name = "Full Bright"
-FullBright.Parent = main
-FullBright.BackgroundColor3 = Color3.new(0.666667, 1, 0)
-FullBright.Position = UDim2.new(0.385882348, 0, 0.849999905, 0)
-FullBright.Size = UDim2.new(0, 94, 0, 50)
-FullBright.Font = Enum.Font.SourceSans
-FullBright.Text = "Full Bright"
-FullBright.TextColor3 = Color3.new(0, 0, 0)
-FullBright.TextSize = 14
-FullBright.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/dCjhRHhV"))()
-end)
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = Click
+Shadow_4.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_4.BorderSizePixel = 0
+Shadow_4.Size = UDim2.new(1, 0, 1, 4)
 
 close.Name = "close"
 close.Parent = main
 close.BackgroundColor3 = Color3.new(0.666667, 0, 0)
-close.Position = UDim2.new(0.83764708, 0, 0, 0)
-close.Size = UDim2.new(0, 68, 0, 50)
+close.Position = UDim2.new(0.847058833, 0, 0, 0)
+close.Size = UDim2.new(0, 65, 0, 50)
 close.Font = Enum.Font.GothamBlack
 close.Text = "X"
 close.TextColor3 = Color3.new(0, 0, 0)
-close.TextSize = 28
+close.TextSize = 20
 close.MouseButton1Down:connect(function()
 	main.Visible = false
 	openmain.Visible = true
 end)
+
+Fling.Name = "Fling"
+Fling.Parent = main
+Fling.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Fling.BorderSizePixel = 0
+Fling.Position = UDim2.new(0.375294119, 0, 0.171511635, 0)
+Fling.Size = UDim2.new(0, 123, 0, 45)
+Fling.ZIndex = 2
+Fling.Font = Enum.Font.GothamSemibold
+Fling.Text = "FE Fling"
+Fling.TextColor3 = Color3.new(1, 1, 1)
+Fling.TextSize = 14
+Fling.TextWrapped = true
+Fling.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/nsF8VEig"))()
+end)
+
+Shadow_5.Name = "Shadow"
+Shadow_5.Parent = Fling
+Shadow_5.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_5.BorderSizePixel = 0
+Shadow_5.Size = UDim2.new(1, 0, 1, 4)
+
+Btools.Name = "Btools"
+Btools.Parent = Fling
+Btools.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Btools.BorderSizePixel = 0
+Btools.Position = UDim2.new(-0.0040650405, 0, 1.52222228, 0)
+Btools.Size = UDim2.new(0, 123, 0, 45)
+Btools.ZIndex = 2
+Btools.Font = Enum.Font.GothamSemibold
+Btools.Text = "Btools"
+Btools.TextColor3 = Color3.new(1, 1, 1)
+Btools.TextSize = 14
+Btools.TextWrapped = true
+Btools.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/UyKNZUVx"))()
+end)
+
+Shadow_6.Name = "Shadow"
+Shadow_6.Parent = Btools
+Shadow_6.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_6.BorderSizePixel = 0
+Shadow_6.Size = UDim2.new(1, 0, 1, 4)
+
+ESP.Name = "ESP"
+ESP.Parent = Btools
+ESP.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.0040650405, 0, 1.67777777, 0)
+ESP.Size = UDim2.new(0, 123, 0, 45)
+ESP.ZIndex = 2
+ESP.Font = Enum.Font.GothamSemibold
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.new(1, 1, 1)
+ESP.TextSize = 14
+ESP.TextWrapped = true
+ESP.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/NAHHheWa"))()
+end)
+
+Shadow_7.Name = "Shadow"
+Shadow_7.Parent = ESP
+Shadow_7.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_7.BorderSizePixel = 0
+Shadow_7.Size = UDim2.new(1, 0, 1, 4)
+
+FullBright.Name = "Full Bright"
+FullBright.Parent = ESP
+FullBright.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+FullBright.BorderSizePixel = 0
+FullBright.Position = UDim2.new(-0.0040650405, 0, 1.56666672, 0)
+FullBright.Size = UDim2.new(0, 123, 0, 45)
+FullBright.ZIndex = 2
+FullBright.Font = Enum.Font.GothamSemibold
+FullBright.Text = "Full Bright"
+FullBright.TextColor3 = Color3.new(1, 1, 1)
+FullBright.TextSize = 14
+FullBright.TextWrapped = true
+FullBright.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/dCjhRHhV"))()
+end)
+
+Shadow_8.Name = "Shadow"
+Shadow_8.Parent = FullBright
+Shadow_8.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_8.BorderSizePixel = 0
+Shadow_8.Size = UDim2.new(1, 0, 1, 4)
+
+Tp.Name = "Tp"
+Tp.Parent = FullBright
+Tp.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Tp.BorderSizePixel = 0
+Tp.Position = UDim2.new(1.07723582, 0, -4.76666689, 0)
+Tp.Size = UDim2.new(0, 127, 0, 45)
+Tp.ZIndex = 2
+Tp.Font = Enum.Font.GothamSemibold
+Tp.Text = "Tp(E To TP)"
+Tp.TextColor3 = Color3.new(1, 1, 1)
+Tp.TextSize = 14
+Tp.TextWrapped = true
+Tp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/AAkQjFhy"))()
+end)
+
+Shadow_9.Name = "Shadow"
+Shadow_9.Parent = Tp
+Shadow_9.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_9.BorderSizePixel = 0
+Shadow_9.Size = UDim2.new(1, 0, 1, 4)
+
+Jump.Name = "Jump"
+Jump.Parent = main
+Jump.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Jump.BorderSizePixel = 0
+Jump.Position = UDim2.new(0.68588233, 0, 0.369186044, 0)
+Jump.Size = UDim2.new(0, 127, 0, 45)
+Jump.ZIndex = 2
+Jump.Font = Enum.Font.GothamSemibold
+Jump.Text = "Infinite Jump"
+Jump.TextColor3 = Color3.new(1, 1, 1)
+Jump.TextSize = 14
+Jump.TextWrapped = true
+Jump.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/eb85iwBG"))()
+end)
+
+Shadow_10.Name = "Shadow"
+Shadow_10.Parent = Jump
+Shadow_10.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_10.BorderSizePixel = 0
+Shadow_10.Size = UDim2.new(1, 0, 1, 4)
+
+Speed.Name = "Speed"
+Speed.Parent = main
+Speed.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.68588233, 0, 0.590116322, 0)
+Speed.Size = UDim2.new(0, 127, 0, 45)
+Speed.ZIndex = 2
+Speed.Font = Enum.Font.GothamSemibold
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.new(1, 1, 1)
+Speed.TextSize = 14
+Speed.TextWrapped = true
+Speed.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/VBhja7r0"))()
+end)
+
+Shadow_11.Name = "Shadow"
+Shadow_11.Parent = Speed
+Shadow_11.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_11.BorderSizePixel = 0
+Shadow_11.Size = UDim2.new(1, 0, 1, 4)
+
+Anti.Name = "Anti"
+Anti.Parent = Speed
+Anti.BackgroundColor3 = Color3.new(0.301961, 0.392157, 0.588235)
+Anti.BorderSizePixel = 0
+Anti.Position = UDim2.new(-0.00393700786, 0, 1.56666672, 0)
+Anti.Size = UDim2.new(0, 127, 0, 45)
+Anti.ZIndex = 2
+Anti.Font = Enum.Font.GothamSemibold
+Anti.Text = "Anti AFK"
+Anti.TextColor3 = Color3.new(1, 1, 1)
+Anti.TextSize = 14
+Anti.TextWrapped = true
+Anti.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
+end)
+
+Shadow_12.Name = "Shadow"
+Shadow_12.Parent = Anti
+Shadow_12.BackgroundColor3 = Color3.new(0.207843, 0.270588, 0.403922)
+Shadow_12.BorderSizePixel = 0
+Shadow_12.Size = UDim2.new(1, 0, 1, 4)
 
 openmain.Name = "openmain"
 openmain.Parent = ScreenGui
@@ -216,11 +336,12 @@ openmain.BackgroundColor3 = Color3.new(1, 1, 1)
 openmain.Position = UDim2.new(0, 0, 0.35575828, 0)
 openmain.Size = UDim2.new(0, 123, 0, 33)
 openmain.Active = true
-openmain.Draggable = true
+openmain.Draggable = true 
 
 open.Name = "open"
 open.Parent = openmain
 open.BackgroundColor3 = Color3.new(1, 1, 1)
+open.Position = UDim2.new(-0.008130081, 0, 0, 0)
 open.Size = UDim2.new(0, 123, 0, 33)
 open.Font = Enum.Font.GothamBlack
 open.Text = "OPEN"
